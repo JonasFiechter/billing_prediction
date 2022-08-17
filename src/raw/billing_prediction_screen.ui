@@ -14,10 +14,10 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_import">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>650</x>
       <y>20</y>
       <width>75</width>
       <height>23</height>
@@ -27,20 +27,35 @@
      <string>Import</string>
     </property>
    </widget>
-   <widget class="QTableView" name="tableView">
+   <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>50</y>
-      <width>501</width>
+      <width>601</width>
       <height>291</height>
      </rect>
     </property>
+    <column>
+     <property name="text">
+      <string>Year</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Month</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Billing</string>
+     </property>
+    </column>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btn_calculate">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>660</x>
       <y>350</y>
       <width>75</width>
       <height>23</height>
@@ -50,17 +65,17 @@
      <string>Calculate</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="line_result">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>350</y>
-      <width>501</width>
+      <width>601</width>
       <height>20</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="lb_title">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -78,7 +93,7 @@
      <string>Billing prediction</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="lb_file_description">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -94,15 +109,15 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>640</x>
       <y>50</y>
-      <width>116</width>
+      <width>131</width>
       <height>291</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="rb_mean">
        <property name="text">
         <string>Mean</string>
        </property>
@@ -112,35 +127,35 @@
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="rb_standard_deviation">
        <property name="text">
         <string>Standard deviation</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_3">
+      <widget class="QRadioButton" name="rb_weighted_average">
        <property name="text">
         <string>Weighted average</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_4">
+      <widget class="QRadioButton" name="rb_data_segregation">
        <property name="text">
         <string>Data segregation</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_5">
+      <widget class="QRadioButton" name="rb_linear_regression">
        <property name="text">
         <string>Linear regression</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QRadioButton" name="radioButton_6">
+      <widget class="QRadioButton" name="rb_time_series">
        <property name="text">
         <string>Time series</string>
        </property>
