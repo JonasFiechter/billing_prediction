@@ -9,6 +9,7 @@ class MainWindow(Ui_MainWindow, QMainWindow):
     def __init__(self) -> None:
         super().__init__()
         super().setupUi(self)
+
         # Connect functions to buttons
         self.btn_import.clicked.connect(lambda: import_file(self))
         
