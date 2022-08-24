@@ -3,7 +3,7 @@ import pandas as pd
 
 def load_table(self):
     self.table = pd.read_csv(self.complete_file_path)
-    self.table.iloc()
+    self.table.iloc() 
 
 def populate_table(self):
     load_table(self)
@@ -16,7 +16,7 @@ def populate_table(self):
     for row_index, x in enumerate(rows_list):
         for column_index, y in enumerate(x):
             self.tableWidget.setItem(row_index, column_index, QTableWidgetItem(str(y)))
-            
+
 
 # Test function
 def module_test():
