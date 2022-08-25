@@ -2,8 +2,8 @@ from PyQt5.QtWidgets import *
 # Features imports
 from src.features.populate_table import populate_table
 from src.features.toggle_components import enable_components
-# Compontens imports
-from src.components.translate_path import translate
+# Utils imports
+from src.utils.translate_path import translate
 
 def import_file(self):
     # Open file dialog!
