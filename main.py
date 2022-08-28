@@ -7,7 +7,7 @@ from src.features.toggle_components import disable_components
 from src.features.predictions import check_prediction
 
 class MainWindow(Ui_MainWindow, QMainWindow):
-    def __init__(self) -> None:
+    def __init__(self):
         super().__init__()
         super().setupUi(self)
         
@@ -16,11 +16,12 @@ class MainWindow(Ui_MainWindow, QMainWindow):
         self.btn_calculate.clicked.connect(lambda: check_prediction(self))
         
         # Disable components
-        disable_components(self)
+        disable_components(window=self)
         
 
 if __name__ == '__main__':
     qt = QApplication(sys.argv)
     window = MainWindow()
+    window.disable_components()
     window.show()
     qt.exec_()

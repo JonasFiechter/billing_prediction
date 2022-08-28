@@ -102,13 +102,3 @@ class Ui_MainWindow(object):
         self.rb_data_segregation.setText(_translate("MainWindow", "Data segregation"))
         self.rb_linear_regression.setText(_translate("MainWindow", "Linear regression"))
         self.rb_time_series.setText(_translate("MainWindow", "Time series"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
