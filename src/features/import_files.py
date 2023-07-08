@@ -1,7 +1,6 @@
 from PyQt5.QtWidgets import *
 # Features imports
 from src.features.populate_table import populate_table
-from src.features.toggle_components import enable_components
 # Utils imports
 from src.utils.translate_path import translate
 
@@ -10,6 +9,7 @@ def import_file(window):
 	try:
 		# The function returns a tuple so let's grab the first index wich is the one we need
 		complete_file_path = QFileDialog.getOpenFileName(window, "Open File", r"", "CSV files (*.csv)")[0]
+		print(QFileDialog.getOpenFileName(window, "Open File", r"", "CSV files (*.csv)"))
 		file_name = translate(complete_file_path)[0]
 		file_path = translate(complete_file_path)[1]
 
